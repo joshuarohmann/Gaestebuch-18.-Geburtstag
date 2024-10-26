@@ -1,0 +1,88 @@
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+#inform {
+    text-align: center;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+/* Formularstile */
+#form-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#submit-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Medienabfragen für kleinere Bildschirme */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #inform {
+        font-size: 0.9em;
+    }
+
+    #form-wrapper {
+        padding: 10px;
+        border: none;
+    }
+
+    .form-control {
+        flex-direction: column;
+    }
+}
+
+/* Medienabfragen für größere Bildschirme */
+@media (min-width: 601px) {
+    #form-wrapper {
+        padding: 30px;
+    }
+
+    #submit-btn {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+}
