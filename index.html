@@ -8,9 +8,9 @@
 </head>
 <body>
     <h1>Gästebuch zu meinem 18. Geburtstag</h1>
-    <p id="inform">
+    <div id="inform">
         Als Gast meines <b>18. Geburtstags</b> darfst du mir hier gerne eine Nachricht hinterlassen.
-    </p>
+    </div>
     <div id="form-wrapper">
         <form action="https://api.web3forms.com/submit" method="POST">
             <!-- Zugangsschlüssel für Web3Forms -->
@@ -23,19 +23,21 @@
             <input type="hidden" name="redirect" value="https://gaestebuch-joshua-rohmann.pages.dev/danke">
         
             <!-- Benutzer-Eingabefelder -->
+            <div class="form-control">
             Name:
             <input type="text" name="name" id="name-input" required>
-            <br>
+            </div>
+            <div class="form-control">
             E-Mail:
             <input type="email" name="email" id="email-input" required>
-            <br>
+            </div>
+            <div class="form-control">
             Eintrag:
             <br>
             <textarea name="message" id="message-input" required></textarea>
-            <br>
-            <input type="submit" value="Eintrag speichern">
+            </div>
+            <input type="submit" value="Eintrag speichern" id="submit-btn">
         </form>        
     </div>
-    <a href="danke.html">Nur zum Test</a>
 </body>
 </html>
